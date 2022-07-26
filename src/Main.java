@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        //  Scanner scanner = new Scanner(System.in);
+        // Lesson 2
      /*  int studentAge = 15;
        double studentGPA = 3.45;
        boolean hasPerfectAttendance = true;
@@ -26,7 +27,7 @@ public class Main {
 
         studentGPA = scanner.nextDouble();
         System.out.println(studentFirstName + " " + studentLastName + "has a GPA of " + studentGPA);
-        */
+
         // Lesson 3 Fortune teller
         System.out.println("Pick a number between 1 and 10");
         int choice = scanner.nextInt();
@@ -36,8 +37,27 @@ public class Main {
         } else{
                 System.out.println("Your shoe selection will make you happy");
             }
+            */
+        // Lesson 3.6 - While loop
+        Scanner input = new Scanner(System.in);
+        boolean isOnRepeat = true;
+
+        while (isOnRepeat) {
+            System.out.println("Playing ABC song");
+            System.out.println("Would you like to take this song off of repeat? Is so, answer yes");
+
+            String userInput = input.next();
 
 
+            if (userInput.equals("yes")) {
+                isOnRepeat = false;
+            } else {
+                isOnRepeat = true;
+                System.out.println("Song called ABC is on the loop");
+            }
+        }
+        System.out.println("Currently playing new song");
+    }
 
     }
-}
+
