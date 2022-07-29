@@ -60,15 +60,15 @@ public class Main {
 
         */
         // Lesson 3.7 Multiple choice
-        System.out.println("Do you think this is true? Choose from your answer \n yes \n no  \n maybe ");
+        System.out.println("Do you think this is true? Choose from your answer \n 1) yes \n 2) no  \n 3) maybe ");
         Scanner scann = new Scanner(System.in);
-        String answer = scann.nextLine();
+        String answer = scann.nextLine().toLowerCase();
         if (answer.equals("yes")) {
             System.out.println("Your answer is " + answer + ". Good Job!");
         }else if (answer.equals("no")) {
             System.out.println("Your answer is " + answer +". Not good job...");
         } else{
-            System.out.println("You are not sure what to do?");
+            System.out.println("Your answer is " + answer + " You are not sure what to do?");
 
 
 
