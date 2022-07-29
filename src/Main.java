@@ -39,7 +39,7 @@ public class Main {
             }
             */
         // Lesson 3.6 - While loop
-        Scanner input = new Scanner(System.in);
+       /* Scanner input = new Scanner(System.in);
         boolean isOnRepeat = true;
 
         while (isOnRepeat) {
@@ -57,7 +57,26 @@ public class Main {
             }
         }
         System.out.println("Currently playing new song");
-    }
+
+        */
+        // Lesson 3.7 Multiple choice
+        System.out.println("Do you think this is true? Choose from your answer \n yes \n no  \n maybe ");
+        Scanner scann = new Scanner(System.in);
+        String answer = scann.nextLine();
+        if (answer.equals("yes")) {
+            System.out.println("Your answer is " + answer + ". Good Job!");
+        }else if (answer.equals("no")) {
+            System.out.println("Your answer is " + answer +". Not good job...");
+        } else{
+            System.out.println("You are not sure what to do?");
+
+
+
+        }
 
     }
+
+}
+
+
 
