@@ -59,24 +59,36 @@ public class Main {
         System.out.println("Currently playing new song");
 
         */
-        // Lesson 3.7 Multiple choice
-        System.out.println("Do you think this is true? Choose from your answer \n 1) yes \n 2) no  \n 3) maybe ");
+        // Lesson 3.7 Multiple choice - with added while loop
+        String question = "Do you think this is true? Choose from your answer \n 1) yes \n 2) no  \n 3) maybe ";
+        System.out.println(question);
         Scanner scann = new Scanner(System.in);
         String answer = scann.nextLine().toLowerCase();
-        if (answer.equals("yes")) {
-            System.out.println("Your answer is " + answer + ". Good Job!");
-        }else if (answer.equals("no")) {
-            System.out.println("Your answer is " + answer +". Not good job...");
-        } else{
-            System.out.println("Your answer is " + answer + " You are not sure what to do?");
-
-
+        while (!answer.equals("yes")){
+            if (answer.equals("no")) {
+                System.out.println("Your answer is " + answer + ". Not good job...");
+                System.out.println("Please reconsider your answer...\n");
+                System.out.println(question);
+                answer = scann.nextLine().toLowerCase();
+            }else if (answer.equals("maybe")) {
+                System.out.println("Your answer is " + answer + " You are not sure what to do?");
+                System.out.println("Please think about it one more time, ok?\n");
+                System.out.println(question);
+                answer = scann.nextLine().toLowerCase();
+            }
+            }
+            System.out.println("Your answer is " + answer + ". Great Job!");
 
         }
-
     }
 
-}
+
+
+
+
+
+
+
 
 
 
